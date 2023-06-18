@@ -13,6 +13,7 @@ class FeeScreen extends StatelessWidget {
     return Scaffold(
        appBar: AppBar(
         title: Center(child: Text('Fee')),
+        ///
        ),
        body: Column(
         children: [

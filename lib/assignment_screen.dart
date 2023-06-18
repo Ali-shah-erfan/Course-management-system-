@@ -7,7 +7,6 @@ import 'assignment_widget.dart';
 class AssignmentScreen extends StatelessWidget {
   static String routeName = 'AssignmentScreen';
    AssignmentScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
