@@ -84,7 +84,7 @@ class AssignmentScreen extends StatelessWidget {
                             if(assignment[index].status == 'Pending')
                                 //then show button
                             AssignmentButton(
-                              title: 'Submit',
+                              title: 'To Submit',
                                 onPress: (){
                                 // submit here
                                 },
