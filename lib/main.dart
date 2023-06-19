@@ -4,7 +4,7 @@ import 'senior_screen.dart';
 import 'constants.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-// i am great in coding
+
 void main() {
   runApp(MyApp());
 }
