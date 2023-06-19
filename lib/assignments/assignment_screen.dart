@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:school/constants.dart';
+import 'package:school/seniorScreen/constants.dart';
 
 import 'assignment_data.dart';
 import 'assignment_widget.dart';
@@ -18,7 +18,7 @@ class AssignmentScreen extends StatelessWidget {
               Expanded(
                 child: Container(
                   decoration: BoxDecoration(
-                    color: kOtherColor,
+                    color: kNewAddColor,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(kDefultPadding),
                       topRight: Radius.circular(kDefultPadding),
@@ -71,6 +71,7 @@ class AssignmentScreen extends StatelessWidget {
                             style: TextStyle(
                               color: kTextBlackColor,
                               fontWeight: FontWeight.w600,
+                              fontSize: 15,
                             ),
                             ),
                             kHalfSizeBox,
@@ -84,7 +85,7 @@ class AssignmentScreen extends StatelessWidget {
                             if(assignment[index].status == 'Pending')
                                 //then show button
                             AssignmentButton(
-                              title: 'To Submit',
+                              title: 'To be Submitted',
                                 onPress: (){
                                 // submit here
                                 },

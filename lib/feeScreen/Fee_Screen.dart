@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
-import 'constants.dart';
+import '../seniorScreen/constants.dart';
 import 'fee_data.dart';
 import 'fee_widgets.dart';
 

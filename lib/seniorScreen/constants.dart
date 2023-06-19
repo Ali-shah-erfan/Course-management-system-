@@ -9,7 +9,7 @@ const Color kContainerColor = Color(0XFF777777);
 const Color kTextLightColor = Color(0XFFA5A5A5);
 const Color kErrorBorderColor = Color.fromARGB(255, 212, 205, 204);
 const Color kOtherColor = Color(0XFFF4F6F7);
-
+const Color kNewAddColor = Color.fromARGB(255, 113, 231, 231);
 const kDefultPadding = 20.0;
 
 const sizedBox = SizedBox(

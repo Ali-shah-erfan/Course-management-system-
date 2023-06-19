@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:school/constants.dart';
-import 'Fee_Screen.dart';
-import 'assignment_screen.dart';
-import 'my_profile.dart';
+import '../dateSheet/dateSheet_screen.dart';
+import '../result/result_screen.dart';
+import '../seniorScreen/constants.dart';
+import '../feeScreen/Fee_Screen.dart';
+import '../assignments/assignment_screen.dart';
+import '../profile/my_profile.dart';
 import 'student_data.dart';
 
 
@@ -121,14 +123,14 @@ class HomeScreen extends StatelessWidget {
                children: [
                   HomeCard(
                     onPress: (){
-                      // Navigator.pushNamed(context,ResultScreen.routeName);
+                       Navigator.push(context, MaterialPageRoute(builder: (context) => ResultScreen()));
                     },
                     icon: 'icons/data-analytics.png',
                     title: 'Result',
                  ),
                   HomeCard(
                     onPress: (){
-                     // Navigator.pushNamed(context, DateSheetScreen.routeName);
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => DateSheetScreen()));
                     }, 
                     icon: 'icons/calendar.png',
                     title: 'DateSheet'  
@@ -174,7 +176,9 @@ class HomeScreen extends StatelessWidget {
                     title: 'Events',
                  ),
                   HomeCard(
-                    onPress: (){},
+                    onPress: (){
+
+                    },
                     icon: 'icons/log-out.png',
                     title: 'Logout'  
                ),

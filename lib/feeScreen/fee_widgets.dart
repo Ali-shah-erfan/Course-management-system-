@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'constants.dart';
-
+import '../seniorScreen/constants.dart';
 
 
 class FeeButton extends StatelessWidget {

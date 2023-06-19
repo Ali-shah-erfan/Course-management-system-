@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../seniorScreen/constants.dart';
 
 class StudentName extends StatelessWidget {
    final String studentName;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:school/constants.dart';
+import 'package:school/seniorScreen/constants.dart';
 
-import 'home_screen.dart';
-import 'login_screen.dart';
+import '../homeScreen/home_screen.dart';
+
 
 class SeniorScreen extends StatelessWidget {
   static String routeName = 'SeniorScreen';
