@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:school/seniorScreen/constants.dart';
 
+import '../seniorScreen/constants.dart';
 import 'assignment_data.dart';
 import 'assignment_widget.dart';
 

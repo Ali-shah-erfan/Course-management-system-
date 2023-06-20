@@ -1,7 +1,5 @@
+import 'package:final_project_course_management_system/seniorScreen/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:school/seniorScreen/constants.dart';
-
-import '../homeScreen/home_screen.dart';
 import '../login/login_screen.dart';
 
 

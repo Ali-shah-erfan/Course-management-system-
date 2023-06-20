@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:school/seniorScreen/constants.dart';
+import '../seniorScreen/constants.dart';
 import 'dateSheet_data.dart';
 
 class DateSheetScreen extends StatelessWidget {

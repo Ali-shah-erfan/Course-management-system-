@@ -1,6 +1,6 @@
+import 'package:final_project_course_management_system/result/result_component.dart';
+import 'package:final_project_course_management_system/result/result_data.dart';
 import 'package:flutter/material.dart';
-import 'package:school/result/result_component.dart';
-import 'package:school/result/result_data.dart';
 import '../seniorScreen/constants.dart';
 import 'dart:math';
 import 'package:collection/collection.dart';

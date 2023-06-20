@@ -27,8 +27,6 @@ class MyProfileScreen extends StatelessWidget {
                     'Report',
                     style: TextStyle(
                       fontSize: 20,
-                      
-                      
                       ),
                       ),
                 ],
