@@ -177,7 +177,7 @@ class HomeScreen extends StatelessWidget {
                  ),
                   HomeCard(
                     onPress: (){
-
+                 // Navigator.of(context).popAndPushNamed(LoginScreen());
                     },
                     icon: 'icons/log-out.png',
                     title: 'Logout'  

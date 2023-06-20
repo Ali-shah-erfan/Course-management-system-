@@ -11,6 +11,7 @@ class FeeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
        appBar: AppBar(
+        backgroundColor: kPrimaryColor,
         title: Center(child: Text('Fee')),
         ///
        ),

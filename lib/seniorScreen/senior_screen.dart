@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:school/seniorScreen/constants.dart';
 
 import '../homeScreen/home_screen.dart';
+import '../login/login_screen.dart';
 
 
 class SeniorScreen extends StatelessWidget {
@@ -10,7 +11,7 @@ class SeniorScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
      Future.delayed(Duration(seconds: 5),(){
-     Navigator.pushNamedAndRemoveUntil(context, HomeScreen.routeName, (route) => false);
+     Navigator.pushNamedAndRemoveUntil(context, LoginScreen.routeName, (route) => false);
     }
     );
     return Scaffold(

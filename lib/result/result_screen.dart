@@ -2,39 +2,44 @@ import 'package:flutter/material.dart';
 import 'package:school/result/result_component.dart';
 import 'package:school/result/result_data.dart';
 import '../seniorScreen/constants.dart';
+import 'dart:math';
+import 'package:collection/collection.dart';
 
 class ResultScreen extends StatelessWidget {
   static String routeName = 'ResultScreen';
-
+      
   @override
   Widget build(BuildContext context) {
-    //int oMarks = result.map((e) => e.botainMarks).sum.toInt();
-    // int tMarks = result.map((e) => e.totalMarks).sum.toInt();
+    int oMarks = result.map((e) => e.botainMarks).sum.toInt();
+    int tMarks = result.map((e) => e.totalMarks).sum.toInt();
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kPrimaryColor,
-        title: Text('Results'),
+        title: Center(child: Text('Results')),
       ),
       body: Column(
         children: [
           // we will design circle in the end
           // ignore: avoid_unnecessary_containers
           Container(
-            margin: EdgeInsets.all(3),
-            height: 20,
-            child: CustomPaint(
-              foregroundPainter: CircularPainter(
-                backgrounColor: kPrimaryColor,
-                linerColor: kOtherColor,
-                width: 5
+            color: Color.fromARGB(255, 51, 191, 209),
+            child: Container(
+              margin: EdgeInsets.all(5),
+              height: 70,
+              child: CustomPaint(
+                foregroundPainter: CircularPainter(
+                  backgrounColor: kTextBlackColor,
+                  linerColor: kOtherColor,
+                  width: 5
+                ),
+                 child: Center(
+                   child: Text(
+                   oMarks.toString() + '\n / \n' + tMarks.toString(),
+                   textAlign: TextAlign.center,
+                   style: TextStyle(fontSize: 15,),
+                  ),
+                 ),
               ),
-              // child: Center(
-              //   child: Text(
-              //     oMarks.toString() + '\n / \n' + tMarks.toString(),
-              //     textAlign: TextAlign.center,
-              //     style: Theme.of(context).textTheme.bodyMedium,
-              //   ),
-              // ),
             ),
           ),
           Text(
@@ -65,7 +70,7 @@ class ResultScreen extends StatelessWidget {
                       margin: EdgeInsets.only(bottom: kDefultPadding),
                       padding: EdgeInsetsDirectional.all(kDefultPadding/2),
                       decoration: BoxDecoration(
-                        color: kTextLightColor,
+                        color: Colors.teal,
                         borderRadius: BorderRadius.circular(kDefultPadding),
                         boxShadow: [
                           BoxShadow(
@@ -106,7 +111,7 @@ class ResultScreen extends StatelessWidget {
                                         width: result[index].totalMarks.toDouble(),
                                         height: 2,
                                         decoration: BoxDecoration(
-                                          color: Colors.grey[700],
+                                          color: kTextWhiteColor,
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(kDefultPadding),
                                             bottomRight: Radius.circular(kDefultPadding),
@@ -117,7 +122,7 @@ class ResultScreen extends StatelessWidget {
                                         height: 2,
                                         width: result[index].botainMarks.toDouble(),
                                         decoration: BoxDecoration(
-                                          color: result[index].grade == 'D'? kErrorBorderColor:kOtherColor,
+                                          color: result[index].grade == 'D'? kErrorBorderColor:Color.fromARGB(255, 6, 230, 13),
                                           borderRadius: BorderRadius.only(
                                             topLeft: Radius.circular(kDefultPadding),
                                             bottomRight: Radius.circular(kDefultPadding),
@@ -129,8 +134,9 @@ class ResultScreen extends StatelessWidget {
                                   Text(
                                     result[index].grade,
                                      textAlign: TextAlign.start,
-                                    style: Theme.of(context).textTheme.bodySmall!.copyWith(
-                                      fontWeight: FontWeight.w900,
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w400,
 
                                     ),
                                     ),

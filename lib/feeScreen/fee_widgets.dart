@@ -18,7 +18,7 @@ class FeeButton extends StatelessWidget {
               height: 40,
               decoration: BoxDecoration(
                 gradient: LinearGradient(
-                  colors : [kSecondaryColor,kPrimaryColor],
+                  colors : [kSecondaryColor,kcustom],
                   begin: const FractionalOffset(0.0, 0.0),
                   end: const FractionalOffset(0.5, 0.0),
                   stops: [0.0, 0.1],

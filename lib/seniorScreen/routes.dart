@@ -3,6 +3,7 @@ import '../dateSheet/dateSheet_screen.dart';
 import '../feeScreen/Fee_Screen.dart';
 import '../assignments/assignment_screen.dart';
 import '../homeScreen/home_screen.dart';
+import '../login/login_screen.dart';
 import '../profile/my_profile.dart';
 import '../result/result_screen.dart';
 import 'senior_screen.dart';
@@ -10,7 +11,7 @@ import 'senior_screen.dart';
  Map<String, WidgetBuilder>routes = {
 
  SeniorScreen.routeName: (context) => SeniorScreen(),
-//LoginScreen.routeName: (context) => LoginScreen(),
+ LoginScreen.routeName: (context) => LoginScreen(),
 HomeScreen.routeName: (context) => HomeScreen(),
 MyProfileScreen.routeName: (context) => MyProfileScreen(),
 FeeScreen.routeName: (context) => FeeScreen(),

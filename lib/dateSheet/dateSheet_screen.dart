@@ -10,12 +10,13 @@ class DateSheetScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('DateSheet'),
+        backgroundColor: kPrimaryColor ,
+        title: Center(child: Text('DateSheet')),
       ),
       body: Container(
          width: MediaQuery.of(context).size.width,
         decoration: BoxDecoration(
-           color: kOtherColor,
+           color: kTextWhiteColor,
            borderRadius: BorderRadius.only(
             topRight: Radius.circular(kDefultPadding),
             topLeft: Radius.circular(kDefultPadding),
